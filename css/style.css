@@ -3439,15 +3439,15 @@ body {
 .ai-img-container {
   flex-grow: 1;
   width: 100%;
-  height: 140px;
+  height: 160px; /* antes 140px */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .ai-service-img {
-  width: 90%;
-  height: auto;
+  width: 100%;        /* que use todo el espacio disponible */
+  max-height: 100%;   /* evita que se pase del alto del contenedor */
   object-fit: contain;
 }
 
