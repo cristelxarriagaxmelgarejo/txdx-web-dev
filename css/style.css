@@ -3619,4 +3619,27 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  #ContactForm,
+  #ContactForm .form-group,
+  .contact-section,
+  .contact-form {
+    display: block !important;
+    width: 100% !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    height: auto !important;
+  }
+
+  .contact-section h6 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .data-contact {
+    margin-bottom: 20px;
+  }
+}
+
+
 
