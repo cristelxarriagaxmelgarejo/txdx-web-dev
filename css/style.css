@@ -3619,27 +3619,35 @@ body {
   }
 }
 
-@media (max-width: 767px) {
-  #ContactForm,
-  #ContactForm .form-group,
-  .contact-section,
-  .contact-form {
+
+
+
+
+/* ===== FIX: Ensure form shows on mobile ===== */
+@media (max-width: 768px) {
+  form#ContactForm {
     display: block !important;
-    width: 100% !important;
-    opacity: 1 !important;
     visibility: visible !important;
     height: auto !important;
+    overflow: visible !important;
   }
 
-  .contact-section h6 {
-    text-align: center;
-    margin-top: 20px;
+  .whatsapp {
+    bottom: 20px;
+    right: 10px;
+    z-index: 50;
   }
 
-  .data-contact {
-    margin-bottom: 20px;
+  .alianzas-section,
+  .alianzas-strategicas,
+  .strategic-partners {
+    overflow: visible !important;
+    height: auto !important;
+    position: relative !important;
+  }
+
+  .footer,
+  footer {
+    overflow: visible !important;
   }
 }
-
-
-
