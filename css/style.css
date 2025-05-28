@@ -3619,35 +3619,18 @@ body {
   }
 }
 
-
-
-
-
-/* ===== FIX: Ensure form shows on mobile ===== */
-@media (max-width: 768px) {
-  form#ContactForm {
-    display: block !important;
-    visibility: visible !important;
-    height: auto !important;
-    overflow: visible !important;
+/* Solución para separar 'Alianzas Estratégicas' del footer en móviles */
+@media only screen and (max-width: 767px) {
+  .clients {
+    margin-bottom: 100px !important;
   }
 
-  .whatsapp {
-    bottom: 20px;
-    right: 10px;
-    z-index: 50;
-  }
-
-  .alianzas-section,
-  .alianzas-strategicas,
-  .strategic-partners {
-    overflow: visible !important;
-    height: auto !important;
-    position: relative !important;
-  }
-
-  .footer,
   footer {
-    overflow: visible !important;
+    padding-top: 100px !important;
+  }
+
+  .footer-bar {
+    margin-top: 80px !important;
   }
 }
+
