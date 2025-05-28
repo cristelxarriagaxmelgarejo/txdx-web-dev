@@ -1000,8 +1000,8 @@ textarea {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  transform: scale(1);
-  filter: blur(0);
+  transform: scale(1.2);
+  filter: blur(20px);
   transition-delay: 0.8s;
 }
 
@@ -1015,10 +1015,8 @@ textarea {
 .slider .swiper-container .swiper-slide {
   background-size: cover;
   background-position: center;
-  background-position-x: 47%; /* <-- Esta línea es la clave */
   overflow: hidden;
 }
-
 
 .slider .swiper-container .swiper-slide video {
   min-width: 100%;
@@ -1026,7 +1024,7 @@ textarea {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-52%, -50%);
+  transform: translate(-50%, -50%);
   opacity: 0.6;
 }
 
@@ -3653,3 +3651,22 @@ body {
 }
 
 
+
+
+/* Fix for center aligning the slider background */
+.slider .swiper-container .swiper-slide {
+  background-position: center center !important;
+  background-repeat: no-repeat;
+}
+
+/* Ensure strategic alliances section has spacing below */
+.clients {
+  margin-bottom: 80px !important;
+}
+
+/* Prevent overlapping footer section */
+.footer {
+  padding-top: 100px !important;
+  position: relative;
+  z-index: 1;
+}
