@@ -1013,8 +1013,10 @@ textarea {
 }
 
 .slider .swiper-container .swiper-slide {
-  background-position: 48% center;
-  background-size: cover; /* mantiene proporciones */
+  background-size: cover;
+  background-position: center;
+  background-position-x: 47%; /* <-- Esta línea es la clave */
+  overflow: hidden;
 }
 
 
