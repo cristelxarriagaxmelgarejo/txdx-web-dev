@@ -1013,10 +1013,10 @@ textarea {
 }
 
 .slider .swiper-container .swiper-slide {
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
+  background-position: 48% center;
+  background-size: cover; /* mantiene proporciones */
 }
+
 
 .slider .swiper-container .swiper-slide video {
   min-width: 100%;
@@ -1024,7 +1024,7 @@ textarea {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-52%, -50%);
   opacity: 0.6;
 }
 
