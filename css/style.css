@@ -3634,3 +3634,13 @@ body {
   }
 }
 
+.fixed-divider {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 5px;
+  background-color: white;
+  width: 100%;
+}
+
+
