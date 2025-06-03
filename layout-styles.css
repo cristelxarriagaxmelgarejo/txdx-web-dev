@@ -238,14 +238,13 @@ textarea {
 }
 
 .footer {
-  position: relative;
-  margin-top: -60px;
-  /* negative value of footer height */
-  height: 60px;
-  clear: both;
-  text-align: center;
-  font-size: 14px;
+  width: 100%;
+  position: relative; /* antes estaba fixed */
+  bottom: 0;
+  z-index: 1;
+  padding-top: 100px !important;
 }
+
 
 #entry-services .content-block figure img {
   width: 100px;
