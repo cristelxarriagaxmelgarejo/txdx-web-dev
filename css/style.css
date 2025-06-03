@@ -85,7 +85,6 @@ a {
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
-
 a:hover {
   text-decoration: underline;
   color: #222327;
@@ -3439,15 +3438,15 @@ body {
 .ai-img-container {
   flex-grow: 1;
   width: 100%;
-  height: 140px;
+  height: 180px; /* antes 140px */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .ai-service-img {
-  width: 90%;
-  height: auto;
+  width: 100%;        /* que use todo el espacio disponible */
+  max-height: 100%;   /* evita que se pase del alto del contenedor */
   object-fit: contain;
 }
 
@@ -3541,11 +3540,132 @@ body {
   line-height: 1.5;
   padding: 10px 15px;
   border-radius: 5px;
-  background-color: transparent;
   transition: all 0.2s ease;
 }
 
 .tooltip-link:hover {
   color: #00bfff;
   text-decoration: underline;
+}
+
+.flip-tooltip {
+  position: relative;
+  height: 180px;
+  background-color: transparent;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.flip-tooltip:hover {
+  background-color: #0d0d0d;
+}
+
+.flip-tooltip .default-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.flip-tooltip .hover-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.flip-tooltip:hover .default-view {
+  opacity: 0;
+}
+
+.flip-tooltip:hover .hover-view {
+  opacity: 1;
+}
+
+/* Visibilidad del formulario en pantallas pequeñas */
+@media (max-width: 767px) {
+  #ContactForm,
+  #ContactForm .form-group,
+  .contact-section,
+  .contact-form {
+    display: block !important;
+    width: 100% !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    height: auto !important;
+    margin-bottom: 20px;
+  }
+
+  .contact-section h6 {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Solución para separar 'Alianzas Estratégicas' del footer en móviles */
+@media only screen and (max-width: 767px) {
+  .clients {
+    margin-bottom: 100px !important;
+  }
+
+  footer {
+    padding-top: 100px !important;
+  }
+
+  .footer-bar {
+    margin-top: 80px !important;
+  }
+}
+
+.fixed-divider {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 5px;
+  background-color: white;
+  width: 100%;
+}
+.alianzas-estrategicas {
+  margin-bottom: 80px;
+}
+
+.formulario-contacto {
+  padding-top: 40px;
+}
+
+
+
+
+/* Fix for center aligning the slider background */
+.slider .swiper-container .swiper-slide {
+  background-position: center center !important;
+  background-repeat: no-repeat;
+}
+
+/* Ensure strategic alliances section has spacing below */
+.clients {
+  margin-bottom: 80px !important;
+}
+
+/* Prevent overlapping footer section */
+.footer {
+  padding-top: 100px !important;
+  position: relative;
+  z-index: 1;
 }
