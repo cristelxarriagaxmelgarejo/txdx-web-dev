@@ -85,6 +85,7 @@ a {
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
+
 a:hover {
   text-decoration: underline;
   color: #222327;
