@@ -121,7 +121,7 @@
 	
 	
 		// FOOTER HEIGHT CALCULATION	
-    		$('body').css({'margin-bottom': $('.footer').innerHeight()});
+    		// $('body').css({'margin-bottom': $('.footer').innerHeight()});
 	
 		
 		

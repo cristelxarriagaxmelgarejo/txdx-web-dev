@@ -41,6 +41,7 @@
 
   <script src="https://kit.fontawesome.com/547dcf2d51.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style-dev.css">
+  <link rel="stylesheet" href="css/style2.css">
 </head>
 
 <body>
@@ -205,736 +206,6 @@
             </div> -->
             </main>
 
-            <style>
-              /* =Variables
-------------------------------------- */
-              /* =Functions
-------------------------------------- */
-              /* =Styles
-------------------------------------- */
-              /* html {
-  background: #1b1c1d;
-  box-sizing: border-box;
-  margin: 0;
-  min-height: 100vh;
-  padding: 0;
-} */
-
-              .c-intro {
-                -webkit-animation: fe30-anime 1s ease-in-out 4s forwards;
-                animation: fe30-anime 1s ease-in-out 4s forwards;
-                opacity: 0;
-              }
-
-              .c-fe30 {
-                color: white;
-                margin-top: 2.5rem;
-                text-align: center;
-              }
-
-              .c-fe30 a {
-                color: white;
-              }
-
-              .c-fe30 a:hover {
-                text-decoration: none;
-              }
-
-              .c-ryanyu {
-                background-color: transparent;
-                display: block;
-                font-family: "Kalam", cursive;
-                height: 4.375rem;
-                margin: 1.25rem auto 0;
-                position: relative;
-                text-align: center;
-                width: 4.375rem;
-              }
-
-              .c-ryanyu img {
-                background-color: white;
-                border: 0.1875rem solid #fa9600;
-                border-radius: 50%;
-                height: 4.375rem;
-                -o-object-fit: contain;
-                object-fit: contain;
-                width: 4.375rem;
-              }
-
-              .c-ryanyu__front {
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-                height: inherit;
-                position: absolute;
-                top: 0;
-                transform: rotateX(0) rotateY(0);
-                transform-style: preserve-3d;
-                transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-                z-index: 2000;
-              }
-
-              .c-ryanyu:hover .c-ryanyu__front {
-                transform: rotateY(180deg);
-              }
-
-              .c-ryanyu__back {
-                background-color: white;
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-                border-radius: 50%;
-                color: #fa9600;
-                height: inherit;
-                position: absolute;
-                text-align: center;
-                top: 0;
-                transform: rotateY(180deg);
-                transform-style: preserve-3d;
-                transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-                width: inherit;
-                z-index: 1000;
-              }
-
-              .c-ryanyu__back::before {
-                content: "Ryan Yu";
-                display: block;
-                transform: rotate(-45deg) translate(-4px, 25px);
-                width: 3.125rem;
-              }
-
-              .c-ryanyu:hover .c-ryanyu__back {
-                transform: rotateY(0);
-              }
-
-              @-webkit-keyframes fe30-anime {
-                0% {
-                  opacity: 0;
-                }
-
-                100% {
-                  opacity: 1;
-                }
-              }
-
-              @keyframes fe30-anime {
-                0% {
-                  opacity: 0;
-                }
-
-                100% {
-                  opacity: 1;
-                }
-              }
-
-              /* =Custom Styles
-------------------------------------- */
-              .c-glitch,
-              .c-glitch__img {
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-                background-size: cover;
-              }
-
-              .c-glitch {
-                height: calc(100vh - 200px);
-                margin: 0 auto;
-                overflow: hidden;
-                position: relative;
-                width: 100vw;
-              }
-
-              .c-glitch__img {
-                background-blend-mode: none;
-                background-color: transparent;
-                height: calc(100% + 5px * 2);
-                left: 0;
-                pointer-events: none;
-                position: absolute;
-                top: 0;
-                transform: translate3d(0, 0, 0);
-                width: calc(100% + 10px * 2);
-              }
-
-              .c-glitch:hover .c-glitch__img:nth-child(n+2) {
-                -webkit-animation-duration: 2s;
-                animation-duration: 2s;
-                -webkit-animation-delay: 0;
-                animation-delay: 0;
-                -webkit-animation-timing-function: linear;
-                animation-timing-function: linear;
-                -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite;
-                -webkit-animation-fill-mode: forwards;
-                animation-fill-mode: forwards;
-              }
-
-              .c-glitch:hover .c-glitch__img:nth-child(2) {
-                -webkit-animation-name: glitch-anim-1;
-                animation-name: glitch-anim-1;
-              }
-
-              .c-glitch:hover .c-glitch__img:nth-child(3) {
-                -webkit-animation-name: glitch-anim-2;
-                animation-name: glitch-anim-2;
-              }
-
-              .c-glitch:hover .c-glitch__img:nth-child(4) {
-                -webkit-animation-name: glitch-anim-3;
-                animation-name: glitch-anim-3;
-              }
-
-              .c-glitch:hover .c-glitch__img:nth-child(5) {
-                -webkit-animation-name: glitch-anim-4;
-                animation-name: glitch-anim-4;
-                background-blend-mode: overlay;
-                background-color: #af4949;
-              }
-
-              .c-glitch__img:nth-child(n+2) {
-                opacity: 0;
-              }
-
-              @-webkit-keyframes glitch-anim-1 {
-
-                0%,
-                100% {
-                  opacity: 1;
-                  transform: translate3d(40px, 0, 0) scale3d(-1, -1, 1);
-                  -webkit-clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
-                  clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
-                }
-
-                20% {
-                  -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
-                  clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
-                }
-
-                30% {
-                  -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
-                  clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
-                }
-
-                40% {
-                  -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
-                  clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
-                }
-
-                50% {
-                  -webkit-clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
-                  clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
-                }
-
-                55% {
-                  -webkit-clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
-                  clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
-                }
-
-                60% {
-                  -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
-                  clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
-                }
-
-                65% {
-                  -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
-                  clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
-                }
-
-                70% {
-                  -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
-                  clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
-                }
-
-                80% {
-                  -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
-                  clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
-                }
-
-                85% {
-                  -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 65%, 0 65%);
-                  clip-path: polygon(0 60%, 100% 60%, 100% 65%, 0 65%);
-                }
-
-                95% {
-                  -webkit-clip-path: polygon(0 72%, 100% 72%, 100% 78%, 0 78%);
-                  clip-path: polygon(0 72%, 100% 72%, 100% 78%, 0 78%);
-                }
-              }
-
-              @keyframes glitch-anim-1 {
-
-                0%,
-                100% {
-                  opacity: 1;
-                  transform: translate3d(40px, 0, 0) scale3d(-1, -1, 1);
-                  -webkit-clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
-                  clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
-                }
-
-                20% {
-                  -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
-                  clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
-                }
-
-                30% {
-                  -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
-                  clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
-                }
-
-                40% {
-                  -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
-                  clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
-                }
-
-                50% {
-                  -webkit-clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
-                  clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
-                }
-
-                55% {
-                  -webkit-clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
-                  clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
-                }
-
-                60% {
-                  -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
-                  clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
-                }
-
-                65% {
-                  -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
-                  clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
-                }
-
-                70% {
-                  -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
-                  clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
-                }
-
-                80% {
-                  -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
-                  clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
-                }
-
-                85% {
-                  -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 65%, 0 65%);
-                  clip-path: polygon(0 60%, 100% 60%, 100% 65%, 0 65%);
-                }
-
-                95% {
-                  -webkit-clip-path: polygon(0 72%, 100% 72%, 100% 78%, 0 78%);
-                  clip-path: polygon(0 72%, 100% 72%, 100% 78%, 0 78%);
-                }
-              }
-
-              @-webkit-keyframes glitch-anim-2 {
-
-                0%,
-                100% {
-                  opacity: 1;
-                  transform: translate3d(-10px, 0, 0);
-                  -webkit-clip-path: polygon(0 25%, 100% 25%, 100% 30%, 0 30%);
-                  clip-path: polygon(0 25%, 100% 25%, 100% 30%, 0 30%);
-                }
-
-                10% {
-                  -webkit-clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
-                  clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
-                }
-
-                15% {
-                  -webkit-clip-path: polygon(0 5%, 100% 5%, 100% 20%, 0 20%);
-                  clip-path: polygon(0 5%, 100% 5%, 100% 20%, 0 20%);
-                }
-
-                17% {
-                  -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
-                  clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
-                }
-
-                19% {
-                  -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 40%, 0 40%);
-                  clip-path: polygon(0 40%, 100% 40%, 100% 40%, 0 40%);
-                }
-
-                33% {
-                  -webkit-clip-path: polygon(0 52%, 100% 52%, 100% 59%, 0 59%);
-                  clip-path: polygon(0 52%, 100% 52%, 100% 59%, 0 59%);
-                }
-
-                35% {
-                  -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
-                  clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
-                }
-
-                40% {
-                  -webkit-clip-path: polygon(0 75%, 100% 75%, 100% 75%, 0 75%);
-                  clip-path: polygon(0 75%, 100% 75%, 100% 75%, 0 75%);
-                }
-
-                45% {
-                  -webkit-clip-path: polygon(0 65%, 100% 65%, 100% 40%, 0 40%);
-                  clip-path: polygon(0 65%, 100% 65%, 100% 40%, 0 40%);
-                }
-
-                49% {
-                  -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 50%, 0 50%);
-                  clip-path: polygon(0 45%, 100% 45%, 100% 50%, 0 50%);
-                }
-
-                50% {
-                  -webkit-clip-path: polygon(0 14%, 100% 14%, 100% 33%, 0 33%);
-                  clip-path: polygon(0 14%, 100% 14%, 100% 33%, 0 33%);
-                }
-
-                55% {
-                  -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 35%, 0 35%);
-                  clip-path: polygon(0 15%, 100% 15%, 100% 35%, 0 35%);
-                }
-
-                60% {
-                  -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
-                  clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
-                }
-
-                70% {
-                  -webkit-clip-path: polygon(0 65%, 100% 65%, 100% 60%, 0 60%);
-                  clip-path: polygon(0 65%, 100% 65%, 100% 60%, 0 60%);
-                }
-
-                80% {
-                  -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 85%, 0 85%);
-                  clip-path: polygon(0 80%, 100% 80%, 100% 85%, 0 85%);
-                }
-
-                90% {
-                  -webkit-clip-path: polygon(0 55%, 100% 55%, 100% 65%, 0 65%);
-                  clip-path: polygon(0 55%, 100% 55%, 100% 65%, 0 65%);
-                }
-              }
-
-              @keyframes glitch-anim-2 {
-
-                0%,
-                100% {
-                  opacity: 1;
-                  transform: translate3d(-10px, 0, 0);
-                  -webkit-clip-path: polygon(0 25%, 100% 25%, 100% 30%, 0 30%);
-                  clip-path: polygon(0 25%, 100% 25%, 100% 30%, 0 30%);
-                }
-
-                10% {
-                  -webkit-clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
-                  clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
-                }
-
-                15% {
-                  -webkit-clip-path: polygon(0 5%, 100% 5%, 100% 20%, 0 20%);
-                  clip-path: polygon(0 5%, 100% 5%, 100% 20%, 0 20%);
-                }
-
-                17% {
-                  -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
-                  clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
-                }
-
-                19% {
-                  -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 40%, 0 40%);
-                  clip-path: polygon(0 40%, 100% 40%, 100% 40%, 0 40%);
-                }
-
-                33% {
-                  -webkit-clip-path: polygon(0 52%, 100% 52%, 100% 59%, 0 59%);
-                  clip-path: polygon(0 52%, 100% 52%, 100% 59%, 0 59%);
-                }
-
-                35% {
-                  -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
-                  clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
-                }
-
-                40% {
-                  -webkit-clip-path: polygon(0 75%, 100% 75%, 100% 75%, 0 75%);
-                  clip-path: polygon(0 75%, 100% 75%, 100% 75%, 0 75%);
-                }
-
-                45% {
-                  -webkit-clip-path: polygon(0 65%, 100% 65%, 100% 40%, 0 40%);
-                  clip-path: polygon(0 65%, 100% 65%, 100% 40%, 0 40%);
-                }
-
-                49% {
-                  -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 50%, 0 50%);
-                  clip-path: polygon(0 45%, 100% 45%, 100% 50%, 0 50%);
-                }
-
-                50% {
-                  -webkit-clip-path: polygon(0 14%, 100% 14%, 100% 33%, 0 33%);
-                  clip-path: polygon(0 14%, 100% 14%, 100% 33%, 0 33%);
-                }
-
-                55% {
-                  -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 35%, 0 35%);
-                  clip-path: polygon(0 15%, 100% 15%, 100% 35%, 0 35%);
-                }
-
-                60% {
-                  -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
-                  clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
-                }
-
-                70% {
-                  -webkit-clip-path: polygon(0 65%, 100% 65%, 100% 60%, 0 60%);
-                  clip-path: polygon(0 65%, 100% 65%, 100% 60%, 0 60%);
-                }
-
-                80% {
-                  -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 85%, 0 85%);
-                  clip-path: polygon(0 80%, 100% 80%, 100% 85%, 0 85%);
-                }
-
-                90% {
-                  -webkit-clip-path: polygon(0 55%, 100% 55%, 100% 65%, 0 65%);
-                  clip-path: polygon(0 55%, 100% 55%, 100% 65%, 0 65%);
-                }
-              }
-
-              @-webkit-keyframes glitch-anim-3 {
-
-                0%,
-                100% {
-                  opacity: 1;
-                  transform: translate3d(0, -5px, 0) scale3d(-1, -1, 1);
-                  -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 3%, 0 3%);
-                  clip-path: polygon(0 1%, 100% 1%, 100% 3%, 0 3%);
-                }
-
-                5% {
-                  -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 9%, 0 9%);
-                  clip-path: polygon(0 10%, 100% 10%, 100% 9%, 0 9%);
-                }
-
-                11% {
-                  -webkit-clip-path: polygon(0 5%, 100% 5%, 100% 6%, 0 6%);
-                  clip-path: polygon(0 5%, 100% 5%, 100% 6%, 0 6%);
-                }
-
-                20% {
-                  -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
-                  clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
-                }
-
-                25% {
-                  -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 10%, 0 10%);
-                  clip-path: polygon(0 10%, 100% 10%, 100% 10%, 0 10%);
-                }
-
-                35% {
-                  -webkit-clip-path: polygon(0 30%, 100% 30%, 100% 25%, 0 25%);
-                  clip-path: polygon(0 30%, 100% 30%, 100% 25%, 0 25%);
-                }
-
-                42% {
-                  -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 16%, 0 16%);
-                  clip-path: polygon(0 15%, 100% 15%, 100% 16%, 0 16%);
-                }
-
-                48% {
-                  -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 39%, 0 39%);
-                  clip-path: polygon(0 40%, 100% 40%, 100% 39%, 0 39%);
-                }
-
-                50% {
-                  -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
-                  clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
-                }
-
-                56% {
-                  -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 55%, 0 55%);
-                  clip-path: polygon(0 60%, 100% 60%, 100% 55%, 0 55%);
-                }
-
-                61% {
-                  -webkit-clip-path: polygon(0 30%, 100% 30%, 100% 31%, 0 31%);
-                  clip-path: polygon(0 30%, 100% 30%, 100% 31%, 0 31%);
-                }
-
-                68% {
-                  -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 69%, 0 69%);
-                  clip-path: polygon(0 70%, 100% 70%, 100% 69%, 0 69%);
-                }
-
-                72% {
-                  -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 41%, 0 41%);
-                  clip-path: polygon(0 40%, 100% 40%, 100% 41%, 0 41%);
-                }
-
-                77% {
-                  -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 75%, 0 75%);
-                  clip-path: polygon(0 80%, 100% 80%, 100% 75%, 0 75%);
-                }
-
-                81% {
-                  -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 51%, 0 51%);
-                  clip-path: polygon(0 50%, 100% 50%, 100% 51%, 0 51%);
-                }
-
-                86% {
-                  -webkit-clip-path: polygon(0 90%, 100% 90%, 100% 90%, 0 90%);
-                  clip-path: polygon(0 90%, 100% 90%, 100% 90%, 0 90%);
-                }
-
-                90% {
-                  -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
-                  clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
-                }
-
-                92% {
-                  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 99%, 0 99%);
-                  clip-path: polygon(0 100%, 100% 100%, 100% 99%, 0 99%);
-                }
-
-                94% {
-                  -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 71%, 0 71%);
-                  clip-path: polygon(0 70%, 100% 70%, 100% 71%, 0 71%);
-                }
-              }
-
-              @keyframes glitch-anim-3 {
-
-                0%,
-                100% {
-                  opacity: 1;
-                  transform: translate3d(0, -5px, 0) scale3d(-1, -1, 1);
-                  -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 3%, 0 3%);
-                  clip-path: polygon(0 1%, 100% 1%, 100% 3%, 0 3%);
-                }
-
-                5% {
-                  -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 9%, 0 9%);
-                  clip-path: polygon(0 10%, 100% 10%, 100% 9%, 0 9%);
-                }
-
-                11% {
-                  -webkit-clip-path: polygon(0 5%, 100% 5%, 100% 6%, 0 6%);
-                  clip-path: polygon(0 5%, 100% 5%, 100% 6%, 0 6%);
-                }
-
-                20% {
-                  -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
-                  clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
-                }
-
-                25% {
-                  -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 10%, 0 10%);
-                  clip-path: polygon(0 10%, 100% 10%, 100% 10%, 0 10%);
-                }
-
-                35% {
-                  -webkit-clip-path: polygon(0 30%, 100% 30%, 100% 25%, 0 25%);
-                  clip-path: polygon(0 30%, 100% 30%, 100% 25%, 0 25%);
-                }
-
-                42% {
-                  -webkit-clip-path: polygon(0 15%, 100% 15%, 100% 16%, 0 16%);
-                  clip-path: polygon(0 15%, 100% 15%, 100% 16%, 0 16%);
-                }
-
-                48% {
-                  -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 39%, 0 39%);
-                  clip-path: polygon(0 40%, 100% 40%, 100% 39%, 0 39%);
-                }
-
-                50% {
-                  -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
-                  clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
-                }
-
-                56% {
-                  -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 55%, 0 55%);
-                  clip-path: polygon(0 60%, 100% 60%, 100% 55%, 0 55%);
-                }
-
-                61% {
-                  -webkit-clip-path: polygon(0 30%, 100% 30%, 100% 31%, 0 31%);
-                  clip-path: polygon(0 30%, 100% 30%, 100% 31%, 0 31%);
-                }
-
-                68% {
-                  -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 69%, 0 69%);
-                  clip-path: polygon(0 70%, 100% 70%, 100% 69%, 0 69%);
-                }
-
-                72% {
-                  -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 41%, 0 41%);
-                  clip-path: polygon(0 40%, 100% 40%, 100% 41%, 0 41%);
-                }
-
-                77% {
-                  -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 75%, 0 75%);
-                  clip-path: polygon(0 80%, 100% 80%, 100% 75%, 0 75%);
-                }
-
-                81% {
-                  -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 51%, 0 51%);
-                  clip-path: polygon(0 50%, 100% 50%, 100% 51%, 0 51%);
-                }
-
-                86% {
-                  -webkit-clip-path: polygon(0 90%, 100% 90%, 100% 90%, 0 90%);
-                  clip-path: polygon(0 90%, 100% 90%, 100% 90%, 0 90%);
-                }
-
-                90% {
-                  -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
-                  clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
-                }
-
-                92% {
-                  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 99%, 0 99%);
-                  clip-path: polygon(0 100%, 100% 100%, 100% 99%, 0 99%);
-                }
-
-                94% {
-                  -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 71%, 0 71%);
-                  clip-path: polygon(0 70%, 100% 70%, 100% 71%, 0 71%);
-                }
-              }
-
-              @-webkit-keyframes glitch-anim-4 {
-
-                0%,
-                5% {
-                  opacity: 0.2;
-                  transform: translate3d(10px, 5px, 0);
-                }
-
-                5.5%,
-                100% {
-                  opacity: 0;
-                  transform: translate3d(0, 0, 0);
-                }
-              }
-
-              @keyframes glitch-anim-4 {
-
-                0%,
-                5% {
-                  opacity: 0.2;
-                  transform: translate3d(10px, 5px, 0);
-                }
-
-                5.5%,
-                100% {
-                  opacity: 0;
-                  transform: translate3d(0, 0, 0);
-                }
-              }
-
-              .h4,
-              h4 {
-                font-size: 1.8rem;
-              }
-            </style>
-
           </div>
           <!-- end col-5 -->
           <div class="col-lg-6">
@@ -946,7 +217,8 @@
             Somos una empresa peruana, especializada en arquitecturas de  red digitales Seguras, con el objetivo de  facilitar y automatizar la IT en las empresas teniendo en cuenta las directrices del cuidado del medio ambiente y las relaciones humanas, contamos con profesionales +20 años de experiencia en el mercado.
           </p> -->
             <p class="wow animated" data-wow-delay="1s">Somos una empresa peruana especializada en arquitecturas de red
-              digitales seguras, con el objetivo de facilitar y automatizar la T&I/OT en las empresas, logrando que crezcan
+              digitales seguras, con el objetivo de facilitar y automatizar la T&I/OT en las empresas, logrando que
+              crezcan
               y adopten total alineamiento con el negocio, buscando la eficacia y eficiencia, con proyectos innovadores
               que reduzcan costos, aumenten la disponibilidad y rendimiento de su infraestructura tecnológica de
               información y negocios. Contamos con profesionales +20 años de experiencia en el mercado, somos
@@ -1078,315 +350,177 @@
           </div>
 
           <!-- Servicio 1 -->
-<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-  <a href="docs/network-radiography.pdf" download>
-    <div class="content-block tooltip-on-hover">
-      <figure><img src="ico/network-radiography.png" alt="Network Radiography"></figure>
-      <h6>Network Radiography</h6>
-      <div class="tooltip-overlay">
-        Optimizamos y aseguramos la infraestructura de red mediante IA, ofreciendo análisis exhaustivos, diagnósticos detallados y recomendaciones para mejorar su eficiencia y seguridad.
-      </div>
-    </div>
-  </a>
-</div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <a href="docs/network-radiography.pdf" download>
+              <div class="content-block tooltip-on-hover">
+                <figure><img src="ico/network-radiography.png" alt="Network Radiography"></figure>
+                <h6>Network Radiography</h6>
+                <div class="tooltip-overlay">
+                  Optimizamos y aseguramos la infraestructura de red mediante IA, ofreciendo análisis exhaustivos,
+                  diagnósticos detallados y recomendaciones para mejorar su eficiencia y seguridad.
+                </div>
+              </div>
+            </a>
+          </div>
 
-         <!-- Servicio 2 -->
-<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-  <a href="docs/cyber-intelligence.pdf" download>
-    <div class="content-block tooltip-on-hover">
-      <figure><img src="ico/cyber-intelligence.png" alt="Cyber Intelligence"></figure>
-      <h6>Cyber Intelligence</h6>
-      <div class="tooltip-overlay">
-        Diseñado para identificar y mitigar vulnerabilidades en las cuentas clave de su organización, evolucionando su firewall humano.
-      </div>
-    </div>
-  </a>
-</div>
+          <!-- Servicio 2 -->
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <a href="docs/cyber-intelligence.pdf" download>
+              <div class="content-block tooltip-on-hover">
+                <figure><img src="ico/cyber-intelligence.png" alt="Cyber Intelligence"></figure>
+                <h6>Cyber Intelligence</h6>
+                <div class="tooltip-overlay">
+                  Diseñado para identificar y mitigar vulnerabilidades en las cuentas clave de su organización,
+                  evolucionando su firewall humano.
+                </div>
+              </div>
+            </a>
+          </div>
 
           <!-- Servicio 3 -->
-<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-  <a href="docs/cyber-assessment.pdf" download>
-    <div class="content-block tooltip-on-hover">
-      <figure><img src="ico/cyber-assessment.png" alt="Cyber Assessment"></figure>
-      <h6>Cyber Assessment</h6>
-      <div class="tooltip-overlay">
-        Empleamos IA/ML, y nos basamos en los marcos NIST CSF 2.0 e ISO 27001 para ofrecer soluciones personalizadas, garantizar el cumplimiento normativo y la protección frente a amenazas.
-      </div>
-    </div>
-  </a>
-</div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <a href="docs/cyber-assessment.pdf" download>
+              <div class="content-block tooltip-on-hover">
+                <figure><img src="ico/cyber-assessment.png" alt="Cyber Assessment"></figure>
+                <h6>Cyber Assessment</h6>
+                <div class="tooltip-overlay">
+                  Empleamos IA/ML, y nos basamos en los marcos NIST CSF 2.0 e ISO 27001 para ofrecer soluciones
+                  personalizadas, garantizar el cumplimiento normativo y la protección frente a amenazas.
+                </div>
+              </div>
+            </a>
+          </div>
 
           <!-- Servicio 4 -->
-<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-  <a href="docs/firewall-check-360.pdf" download>
-    <div class="content-block tooltip-on-hover">
-      <figure><img src="ico/firewall-check.png" alt="Firewall Check 360"></figure>
-      <h6>Firewall Check 360</h6>
-      <div class="tooltip-overlay">
-        Auditoría integral de ciberseguridad impulsado por IA/ML que identifica vulnerabilidades en su red, respaldada por arquitectos de ciberseguridad que ofrecen asesoramiento personalizado.
-      </div>
-    </div>
-  </a>
-</div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <a href="docs/firewall-check-360.pdf" download>
+              <div class="content-block tooltip-on-hover">
+                <figure><img src="ico/firewall-check.png" alt="Firewall Check 360"></figure>
+                <h6>Firewall Check 360</h6>
+                <div class="tooltip-overlay">
+                  Auditoría integral de ciberseguridad impulsado por IA/ML que identifica vulnerabilidades en su red,
+                  respaldada por arquitectos de ciberseguridad que ofrecen asesoramiento personalizado.
+                </div>
+              </div>
+            </a>
+          </div>
 
           <!-- Servicio 5 -->
-<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-  <a href="docs/troubleshooting-appexperience.pdf" download>
-    <div class="content-block tooltip-on-hover">
-      <figure><img src="ico/troubleshooting-app.png" alt="TroubleShooting AppExperience"></figure>
-      <h6>TroubleShooting AppExperience</h6>
-      <div class="tooltip-overlay">
-        Monitorea y optimiza el rendimiento de las aplicaciones para garantizar su eficiencia y ofrecer una experiencia óptima al usuario final.
-      </div>
-    </div>
-  </a>
-</div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <a href="docs/troubleshooting-appexperience.pdf" download>
+              <div class="content-block tooltip-on-hover">
+                <figure><img src="ico/troubleshooting-app.png" alt="TroubleShooting AppExperience"></figure>
+                <h6>TroubleShooting AppExperience</h6>
+                <div class="tooltip-overlay">
+                  Monitorea y optimiza el rendimiento de las aplicaciones para garantizar su eficiencia y ofrecer una
+                  experiencia óptima al usuario final.
+                </div>
+              </div>
+            </a>
+          </div>
 
           <!-- Servicio 6 -->
-<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-  <a href="docs/troubleshooting-netperformance.pdf" download>
-    <div class="content-block tooltip-on-hover">
-      <figure><img src="ico/troubleshooting-net.png" alt="TroubleShooting NetPerformance"></figure>
-      <h6>TroubleShooting NetPerformance</h6>
-      <div class="tooltip-overlay">
-        Servicio especializado en optimizar el rendimiento de su WAN, diagnosticando y resolviendo problemas para asegurar una red robusta, escalable y eficiente.
-      </div>
-    </div>
-  </a>
-</div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <a href="docs/troubleshooting-netperformance.pdf" download>
+              <div class="content-block tooltip-on-hover">
+                <figure><img src="ico/troubleshooting-net.png" alt="TroubleShooting NetPerformance"></figure>
+                <h6>TroubleShooting NetPerformance</h6>
+                <div class="tooltip-overlay">
+                  Servicio especializado en optimizar el rendimiento de su WAN, diagnosticando y resolviendo problemas
+                  para asegurar una red robusta, escalable y eficiente.
+                </div>
+              </div>
+            </a>
+          </div>
 
           <!-- Servicio 7 -->
-<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-  <a href="docs/cryptography-agile.pdf" download>
-    <div class="content-block tooltip-on-hover">
-      <figure><img src="ico/cryptography-agile.png" alt="Cryptography Agile"></figure>
-      <h6>Cryptography Agile</h6>
-      <div class="tooltip-overlay">
-        Facilita la migración segura a soluciones de criptografía postcuántica (PQC), protegiendo los datos ante futuras amenazas como los ataques.
-      </div>
-    </div>
-  </a>
-</div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <a href="docs/cryptography-agile.pdf" download>
+              <div class="content-block tooltip-on-hover">
+                <figure><img src="ico/cryptography-agile.png" alt="Cryptography Agile"></figure>
+                <h6>Cryptography Agile</h6>
+                <div class="tooltip-overlay">
+                  Facilita la migración segura a soluciones de criptografía postcuántica (PQC), protegiendo los datos
+                  ante futuras amenazas como los ataques.
+                </div>
+              </div>
+            </a>
+          </div>
 
           <!-- Servicio 8 -->
-<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-  <a href="docs/net-resilience.pdf" download>
-    <div class="content-block tooltip-on-hover">
-      <figure><img src="ico/net-resilience.png" alt="Net Resilience"></figure>
-      <h6>Net Resilience</h6>
-      <div class="tooltip-overlay">
-        Estudio integral de la resiliencia de la red, con el objetivo de recomendar mejoras y optimizar configuraciones que mejoren la disponibilidad de los servicios de la red.
-      </div>
-    </div>
-  </a>
-</div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <a href="docs/net-resilience.pdf" download>
+              <div class="content-block tooltip-on-hover">
+                <figure><img src="ico/net-resilience.png" alt="Net Resilience"></figure>
+                <h6>Net Resilience</h6>
+                <div class="tooltip-overlay">
+                  Estudio integral de la resiliencia de la red, con el objetivo de recomendar mejoras y optimizar
+                  configuraciones que mejoren la disponibilidad de los servicios de la red.
+                </div>
+              </div>
+            </a>
+          </div>
 
           <!-- Servicio 9 -->
-<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-  <a href="docs/net-hardening.pdf" download>
-    <div class="content-block tooltip-on-hover">
-      <figure><img src="ico/net-hardening.png" alt="Net Hardening"></figure>
-      <h6>Net Hardening</h6>
-      <div class="tooltip-overlay">
-        Fortalece la seguridad de tus dispositivos de red mediante mejores prácticas de gobernanza, protección y respuesta ante incidentes, asegurando una infraestructura robusta y confiable.
-      </div>
-    </div>
-  </a>
-</div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <a href="docs/net-hardening.pdf" download>
+              <div class="content-block tooltip-on-hover">
+                <figure><img src="ico/net-hardening.png" alt="Net Hardening"></figure>
+                <h6>Net Hardening</h6>
+                <div class="tooltip-overlay">
+                  Fortalece la seguridad de tus dispositivos de red mediante mejores prácticas de gobernanza, protección
+                  y respuesta ante incidentes, asegurando una infraestructura robusta y confiable.
+                </div>
+              </div>
+            </a>
+          </div>
 
           <!-- Servicio 10 -->
-<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-  <a href="docs/ransomsafe-defense.pdf" download>
-    <div class="content-block tooltip-on-hover">
-      <figure><img src="ico/ransomsafe-defense.png" alt="RansomSafe Proactive Defense"></figure>
-      <h6>RansomSafe Proactive Defense</h6>
-      <div class="tooltip-overlay">
-        Solución integral para detener ataques, recuperar datos y proteger su infraestructura crítica utilizando tecnologías de respuesta autónoma y análisis en tiempo real.
-      </div>
-    </div>
-  </a>
-</div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <a href="docs/ransomsafe-defense.pdf" download>
+              <div class="content-block tooltip-on-hover">
+                <figure><img src="ico/ransomsafe-defense.png" alt="RansomSafe Proactive Defense"></figure>
+                <h6>RansomSafe Proactive Defense</h6>
+                <div class="tooltip-overlay">
+                  Solución integral para detener ataques, recuperar datos y proteger su infraestructura crítica
+                  utilizando tecnologías de respuesta autónoma y análisis en tiempo real.
+                </div>
+              </div>
+            </a>
+          </div>
 
           <!-- Servicio 11 -->
-<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-  <a href="docs/net-evolution.pdf" download>
-    <div class="content-block tooltip-on-hover">
-      <figure><img src="ico/net-evolution.png" alt="Net Evolution"></figure>
-      <h6>Net Evolution</h6>
-      <div class="tooltip-overlay">
-        Evaluamos la salud de la red y sus requerimientos para diseñar una infraestructura alineada con los objetivos del negocio.
-      </div>
-    </div>
-  </a>
-</div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <a href="docs/net-evolution.pdf" download>
+              <div class="content-block tooltip-on-hover">
+                <figure><img src="ico/net-evolution.png" alt="Net Evolution"></figure>
+                <h6>Net Evolution</h6>
+                <div class="tooltip-overlay">
+                  Evaluamos la salud de la red y sus requerimientos para diseñar una infraestructura alineada con los
+                  objetivos del negocio.
+                </div>
+              </div>
+            </a>
+          </div>
 
           <!-- Servicio 12 -->
-<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-  <a href="docs/net-migration.pdf" download>
-    <div class="content-block tooltip-on-hover">
-      <figure><img src="ico/net-migration.png" alt="Net Migration"></figure>
-      <h6>Net Migration</h6>
-      <div class="tooltip-overlay">
-        Migración integral y segura de su infraestructura tecnológica siguiendo las mejores prácticas para garantizar continuidad operativa, seguridad y eficiencia.
-      </div>
-    </div>
-  </a>
-</div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <a href="docs/net-migration.pdf" download>
+              <div class="content-block tooltip-on-hover">
+                <figure><img src="ico/net-migration.png" alt="Net Migration"></figure>
+                <h6>Net Migration</h6>
+                <div class="tooltip-overlay">
+                  Migración integral y segura de su infraestructura tecnológica siguiendo las mejores prácticas para
+                  garantizar continuidad operativa, seguridad y eficiencia.
+                </div>
+              </div>
+            </a>
+          </div>
 
 
         </div>
       </div>
     </section>
-
-
-    <style>
-      .parallax-container {
-        background-image: url('https://picsum.photos/1920/1680/?random');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        /* height: 400px; */
-        width: 100%;
-      }
-
-      .bgservicios01 {
-        background-image: url('images/bgservicios01.jpg');
-      }
-
-      .bgservicios02 {
-        background-image: url('images/bgservicios02.jpg');
-      }
-
-      .bgservicios03 {
-        background-image: url('images/bgservicios03.jpg');
-      }
-
-      .bgservicios04 {
-        background-image: url('images/bgservicios04.jpg');
-      }
-
-      .supercontainer {
-        /* --src: url(https://images.unsplash.com/photo-1554620121-59e7f3f6e3a4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy); */
-        --size: 60vmin;
-        --space: 8vmin;
-        --duration: 300ms;
-        --ease-out: cubic-bezier(0.25, 1, 0.5, 1);
-        --bounce-out: cubic-bezier(0.34, 1.56, 0.64, 1);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      .imgcontainer {
-        display: grid;
-        place-items: center;
-        grid-gap: var(--space);
-        margin: 0 auto;
-        /* padding: var(--space);
-  font-family: "Sura", sans-serif;
-  color: white;
-  background-color: rgb(29, 30, 34); */
-      }
-
-      .promo {
-        position: relative;
-        cursor: pointer;
-        width: var(--size);
-        height: var(--size);
-      }
-
-      .title {
-        --font-size: calc(var(--size) / 8);
-
-        display: flex;
-        align-items: center;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        font-size: var(--font-size);
-        font-weight: 700;
-        line-height: 1.2;
-        white-space: nowrap;
-        transform: translate(-10%, -50%);
-        transition: transform var(--duration) var(--ease-out);
-        pointer-events: none;
-      }
-
-      .title::after {
-        content: attr(data-cta);
-        display: inline-block;
-        margin-left: 1.5vmin;
-        font-size: calc(var(--font-size) / 3.25);
-        font-weight: 400;
-        letter-spacing: 0.125vmin;
-        opacity: 0;
-        transform: translateX(-25%);
-        transition: transform var(--duration) var(--ease-out),
-          opacity var(--duration) var(--ease-out);
-      }
-
-      .image-wrapper {
-        width: var(--size);
-        height: var(--size);
-        overflow: hidden;
-        clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
-        transition: transform var(--duration) var(--ease-out),
-          clip-path var(--duration) var(--ease-out);
-      }
-
-      .image-wrapper img {
-        position: relative;
-        width: 120%;
-        height: 100%;
-        object-fit: cover;
-        transform: translateX(-10%);
-        transition: transform var(--duration) var(--ease-out);
-      }
-
-      .image-wrapper::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--overlay-color);
-        mix-blend-mode: multiply;
-        opacity: 0;
-        transform: translateZ(0);
-        transition: opacity var(--duration) var(--ease-out);
-      }
-
-      .promo:hover img {
-        transform: translateX(0);
-      }
-
-      .promo:hover .image-wrapper {
-        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-        transform: translateX(25%);
-        transition-timing-function: var(--bounce-out);
-      }
-
-      .promo:hover .title {
-        transform: translate(5%, -50%);
-        transition-timing-function: var(--bounce-out);
-      }
-
-      .promo:hover .title::after {
-        opacity: 1;
-        transform: translateX(0);
-        transition-timing-function: var(--bounce-out);
-      }
-
-      .promo:hover .image-wrapper::after {
-        opacity: 1;
-      }
-
-      .imgborde {
-        border: 10px solid white;
-      }
-    </style>
 
     <section id="presales" class="parallax-container bgservicios01 intro bgc-black">
 
@@ -1509,7 +643,7 @@
                 <li>SERVICIOS DE DEPLOYMENT EN ARQUITECTURAS TELEWORKING.</li>
                 <li>SERVICIOS DE DEPLOYMENT EN SD-WAN.</li>
                 <li>SERVICIOS DE DEPLOYMENT EN ARQUITECTURAS DNA.</li>
-                <li>SERVICIOS DE DEPLOYMENT EN ARQUITECTURA ACI ANYWHERE<./li>
+                <li>SERVICIOS DE DEPLOYMENT EN ARQUITECTURA ACI ANYWHERE<. /li>
                 <li>SERVICIOS DE DEPLOYMENT EN ARQUITECTURA CLOUD.</li>
                 <li>SERVICIOS DE DEPLOYMENT EN MULTIDOMAIN DIGITAL ARCHITECTURE.</li>
               </ul>
@@ -1582,7 +716,7 @@
           <h6>HABLANOS DE TU PROYECTO.</h6>
           <div class="row">
             <!-- Form For You-->
-            <form id="ContactForm" class="col-md-6" action="https://formsubmit.co/0a0631deb261dfddd3a1809e152583c7"
+            <form id="ContactForm" class="col-md-6 mb-4" action="https://formsubmit.co/0a0631deb261dfddd3a1809e152583c7"
               method="POST">
               <!-- NAME-->
               <div class="form-group col-md-12">
@@ -1598,7 +732,7 @@
               <div class="form-group col-md-12">
                 <textarea name="message" cols="40" rows="6" placeholder="Tu mensaje" class="form-control"></textarea>
               </div>
-              <div class="form-group col-md-12">
+              <div class="form-group col-md-12 text-center">
                 <!-- Buttom Submit-->
                 <input type="submit" value="Enviar" class="btn btn-pr">
                 <input type="hidden" name="_next" value="https://txdxsecure.com">
@@ -1681,7 +815,7 @@
   <!-- JS FILES -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/swiper.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src='js/splitting.min.js'></script>
   <script src='js/odometer.min.js'></script>
